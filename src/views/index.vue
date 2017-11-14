@@ -1,28 +1,40 @@
-<template>
-  <div class="wrapper">
-    <image :src="logoUrl" class="logo"></image>
-    <text class="title">Hello {{target}}</text>
-    <text class="desc">Now, let's use vue to build your weex app.</text>
+<template>  
+  <div class="container">
+    <text @click="test">111111111111</text>
+    <Hello></Hello>
   </div>
 </template>
 
-<style>
-  .wrapper { align-items: center; margin-top: 120px; }
-  .title { padding-top:40px; padding-bottom: 40px; font-size: 48px; }
-  .logo { width: 360px; height: 156px; }
-  .desc { padding-top: 20px; color:#888; font-size: 24px;}
+<style>  
+  .container{
+    position: relative;
+    height: 1000px;
+  }
 </style>
 
+
 <script>
+import weexHtml5 from 'weex-html5'
+import hello from '../../plugins/web/index.js'
+weexHtml5.install(hello)
+ 
   export default {
     data(){
       return{
-          logoUrl: 'http://img1.vued.vanthink.cn/vued08aa73a9ab65dcbd360ec54659ada97c.png',
-          target: 'World'
+
+
       }
     },
-    methods: {
+    components:{},
+    methods:{
+      test(){
 
+        // guide.greeting()
+      }
+    },
+    mounted(){
+      
     }
+
   }
 </script>

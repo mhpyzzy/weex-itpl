@@ -2,6 +2,8 @@
 node_modules/
 dist/
 platforms/android/
+platforms/ios/
+plugins/web
 temp/
 npm-debug.log*
 yarn-debug.log*
@@ -13,4 +15,3 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
-/platforms/ios
