@@ -1,0 +1,63 @@
+//color
+// 主色
+$color_primary:#E85521 !default;
+
+// 辅助色
+$color_success:#00CC99 !default;
+$color_warning:#E85521 !default;
+// $color_danger
+// $color_info
+
+// 灰色系
+$color_white:#fff !default;
+$color_white_dark:darken($color_white,15%) !default;
+
+$color_black:#2C2C2C !default;
+// $color_black_light
+// $color_black_lighter
+
+$color_gray_base:#999 !default;
+$color_gray_light:lighten($color_gray_base,10%) !default;
+$color_gray_lighter:lighten($color_gray_base,15%) !default;
+
+//link
+// $link_color
+// $link_color_hover
+
+//border
+$border_width_base:1px !default;
+$border_style_base:solid !default;
+$border_color_base:#ccc !default;
+// $border_color_hover
+$border_base:$border_width_base $border_style_base $border_color_base;
+
+//radius
+$border_radius_base:10px;
+// $border_radius_small:5px;
+
+//shadow
+// $box_shadow_base
+// $box_shadow_dark
+
+//背景色
+$fill_base:#eeeeee !default;
+
+//font
+$font_size_base:16px !default;
+$font_color_base:#2c2c2c !default;
+$font_color_sub:#999999 !default;
+
+$font_size_larger:$font_size_base + 4px !default;
+$font_size_small:$font_size_base - 2px !default;
+$font_size_mini:$font_size_base - 4px !default;
+
+
+//disabled
+$disabled_fill_base:#ccc !default;
+$disabled_color_base:#fff !default;
+// $disabled_border_base:
+
+
+
+// style components
+
