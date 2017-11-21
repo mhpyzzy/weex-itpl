@@ -8,7 +8,7 @@
 ## 开发调试
     npm run serve
 ## 边调试边编译
-    npm run serve
+    npm run dev
 ## 打包
     npm run build
 ## copy bunldejs 到android 项目
