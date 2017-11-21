@@ -1,7 +1,7 @@
 <template>  
   <div class="container">
     <text @click="test">111111111111</text>
-    <Hello></Hello>
+    <text @click="test2">222222222222</text>
   </div>
 </template>
 
@@ -14,26 +14,31 @@
 
 
 <script>
-import weexHtml5 from 'weex-html5'
-import hello from '../../plugins/web/index.js'
-weexHtml5.install(hello)
- 
+
+const animation = weex.requireModule('animation')
+const weextest = weex.requireModule('weextest')
+
   export default {
     data(){
       return{
-
-
-      }
+        
+        
+        }
     },
     components:{},
     methods:{
       test(){
-
+        
+        weextest.setTitle('zzyzzy')
         // guide.greeting()
+      },
+      test2(){
+        weextest.log(11111111111111)
       }
     },
     mounted(){
-      
+      // console.log(weex)
+      console.log(this.$getConfig())
     }
 
   }

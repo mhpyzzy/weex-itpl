@@ -4,12 +4,13 @@
   "description": "A weex project",
   "main": "index.js",
   "scripts": {
-    "start": "npm run serve",
     "build": "webpack --config build/webpack.build.js",
     "build_plugin": "webpack --config ./tools/webpack.config.plugin.js --color",
     "dev": "webpack --config build/webpack.build.js --watch",
-    "test": "node build/webpack.dev.js",
-    "serve": "webpack-dev-server --config build/webpack.dev.js --progress --watch --open"
+    "serve": "webpack-dev-server --config build/webpack.dev.js --progress --watch --open",
+    "copy": "node build/copy.js all",
+    "copy:ios": "node build/copy.js ios",
+    "copy:android": "node build/copy.js android"
   },
   "keywords": [
     "weex"
@@ -34,6 +35,7 @@
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-stage-0": "^6.24.1",
     "babel-runtime": "^6.9.2",
+    "chalk": "^2.3.0",
     "copy-webpack-plugin": "^4.2.0",
     "css-loader": "^0.26.1",
     "friendly-errors-webpack-plugin": "^1.6.1",
