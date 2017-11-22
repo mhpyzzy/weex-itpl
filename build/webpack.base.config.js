@@ -1,6 +1,14 @@
 /**
- * 基本配置文件
+ *---------------------------------------------------------
+ * Author: Aron zhang
+ * Email: 41921926@qq.com
+ * Version:1.0
+ * DESCRIPTION: 基本配置文件
+ * 
+ *---------------------------------------------------------
  */
+
+
 
 const path = require('path');
 const webpack = require('webpack')

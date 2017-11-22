@@ -1,3 +1,14 @@
+/**
+ *---------------------------------------------------------
+ * Author: Aron zhang
+ * Email: 41921926@qq.com
+ * Version:1.0
+ * DESCRIPTION: 构建打包，native(多页面) 端js和 h5端(单页面)
+ * 
+ *---------------------------------------------------------
+ */
+
+
 require('shelljs/global')
 const path = require('path')
 const webpack = require('webpack')

@@ -1,3 +1,15 @@
+/**
+ *---------------------------------------------------------
+ * Author: Aron zhang
+ * Email: 41921926@qq.com
+ * Version:1.0
+ * DESCRIPTION: 开发调试，只构建h5端调试界面，
+ *              native端调试 直接用 weex-previewer  xxx.vue
+ * 
+ *---------------------------------------------------------
+ */
+
+
 const path = require('path');
 const webpack = require('webpack')
 const DevServer = require('webpack-dev-server')

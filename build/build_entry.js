@@ -1,6 +1,13 @@
 /**
- * 创建native 多页面入口文件
+ *---------------------------------------------------------
+ * Author: Aron zhang
+ * Email: 41921926@qq.com
+ * Version:1.0
+ * DESCRIPTION: 创建native 多页面入口文件
+ * 
+ *---------------------------------------------------------
  */
+
 
 require('shelljs/global')
 const path = require('path');
