@@ -1,12 +1,21 @@
 /**
- * http api
+ *---------------------------------------------------------
+ * Author: Aron zhang
+ * Email: 41921926@qq.com
+ * Version:1.0
+ * DESCRIPTION: http api
+ * 
+ *---------------------------------------------------------
  */
+
+
 
 
 import qs from 'qs'
 import {urlEncode} from './string.js'
 import {getItem} from '../utils/modules/storage.js'
 import storage from './modules/storage.js'
+import { TOKEN } from '../constants/store-types.js'
 let stream = weex.requireModule('stream')
 
 const deviceType = ()=>{
@@ -20,7 +29,8 @@ const headers = {
 
 function get({baseUrl, url, params=null}) {
     return new Promise((resolve, reject) => {
-      storage.getItem('user_info').then((data)=>{
+      // 此处可以添加 用户认证，如：TOKEN
+      // storage.getItem(TOKEN).then((data)=>{
         console.log('request:', `${baseUrl + url}?${qs.stringify(params)}`)
         stream.fetch({
           method: 'GET',
@@ -37,13 +47,14 @@ function get({baseUrl, url, params=null}) {
         }, progress => {
           console.log('get in progress:' + progress.length)
         })
-      })
+      // })
     })
   }
   
 function post({baseUrl, url, params = {} }) {
   return new Promise((resolve, reject) => {
-    storage.getItem('user_info').then((data) => {
+    // 此处可以添加 用户认证，如：TOKEN
+    // storage.getItem(TOKEN).then((data) => {
       stream.fetch({
         method: 'POST',
         url: baseUrl + url,
@@ -59,7 +70,7 @@ function post({baseUrl, url, params = {} }) {
       }, progress => {
         console.log('get in progress:' + progress.headers)
       })
-    })
+    // })
   })
 }
   

@@ -96,6 +96,12 @@ const devWebConfig = merge(baseConfig,{
         watchOptions: {
           aggregateTimeout: 300,
           poll: 1000
+        },
+        proxy:{
+          '/api':{
+            target:'http://xxx.xxx.com/',
+            changeOrigin:true
+          }
         }
       }
 })
