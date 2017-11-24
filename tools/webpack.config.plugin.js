@@ -9,7 +9,7 @@ let root = process.cwd();
 
 module.exports = {
   entry: {
-    plugins: [path.join(root,'plugins/plugin_bundle.js')],
+    plugins: [path.join(root,'plugins/pluginInstall.js')],
   },
   output: {
     path: path.join(root,'web'),

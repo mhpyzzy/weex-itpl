@@ -33,6 +33,7 @@ const plugins = [
         {from: path.join(__dirname,'../src/assets/font'), to: "./font"},
         {from: path.join(__dirname,'../node_modules/vue/dist'), to: "./library/vue"},
         {from: path.join(__dirname,'../node_modules/weex-vue-render/dist'), to: "./library/weex-vue-render"},
+        {from: path.join(__dirname,'../web/plugin.js'), to: "./library/plugin"},
     ])
   ];
 

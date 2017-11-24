@@ -20,10 +20,10 @@
   "dependencies": {
     "fs-extra": "^4.0.1",
     "shelljs": "^0.7.8",
-    "vue": "2.4.2",
+    "vue": "^2.4.3",
     "vue-router": "^2.1.1",
     "weex-html5": "^0.4.1",
-    "weex-vue-render": "^0.11.2"
+    "weex-vue-render": "^0.12.21"
   },
   "devDependencies": {
     "@weex-project/weex-picker": "^0.2.4",
@@ -49,12 +49,12 @@
     "url-loader": "^0.6.2",
     "vue-loader": "^10.0.2",
     "vue-progressbar": "^0.7.3",
-    "vue-template-compiler": "2.4.2",
+    "vue-template-compiler": "^2.4.3",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.4.2",
     "webpack-merge": "^4.1.0",
     "weex-builder": "^0.2.6",
-    "weex-loader": "^0.4.1"
+    "weex-loader": "^0.5.3"
   },
   "optionalDependencies": {
     "ios-deploy": "^1.9.0"

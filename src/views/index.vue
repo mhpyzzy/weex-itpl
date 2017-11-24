@@ -2,6 +2,7 @@
   <div class="container">
     <text @click="test">111111111111</text>
     <text @click="test2">222222222222</text>
+    <!-- <hello>111</hello> -->
   </div>
 </template>
 
@@ -14,14 +15,12 @@
 
 
 <script>
-
-const animation = weex.requireModule('animation')
-const weextest = weex.requireModule('weextest')
+  let animation = weex.requireModule('animation')
+  let weextest = weex.requireModule('weextest')
 
   export default {
     data(){
       return{
-        
         
         }
     },
@@ -38,7 +37,7 @@ const weextest = weex.requireModule('weextest')
     },
     mounted(){
       // console.log(weex)
-      console.log(this.$getConfig())
+      // console.log(this.$getConfig())
     }
 
   }
