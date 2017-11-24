@@ -1,3 +1,4 @@
+
 import modal from '../utils/modules/modal'
 import qs from 'qs'
 
@@ -38,6 +39,15 @@ module.exports = {
             }
         },
 
+        
+        /**
+         *---------------------------------------------------------
+         * @name: getUrlQuery
+         * @description: 获取url中的参数并转换成json输出
+         * @param:  ,/type: / 默认值: / 描述: 
+         * 
+         *---------------------------------------------------------
+         */
         getUrlQuery(){
             let _query = {};
             //获取url的参数部分

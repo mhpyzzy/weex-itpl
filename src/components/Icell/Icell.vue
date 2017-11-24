@@ -29,7 +29,7 @@
         },
         props:{
             icon:{
-                type:String,
+                type:[String,Boolean],
                 default:'&#xe649;'
             },
             border:{
@@ -44,7 +44,9 @@
 </script>
 
 <style lang="sass" scoped>
-    @import '../../style/var.scss';
+    $border_width_base:1px !default;
+    $border_style_base:solid !default;
+    $border_color_base:#ccc !default;
 
     .Icell{
         flex-direction: row;

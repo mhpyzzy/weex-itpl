@@ -1,8 +1,10 @@
 <template>
-    <image v-bind:src="imagePath"
-           v-bind:placeholder="placeholderPath"
+    <image :src="imagePath"
+           :placeholder="placeholderPath"
+           :resize="resize"
            @click="_click($event)"
-           @load="_load()"></image>
+           @load="_load()"
+           ref="Iimg"></image>
 </template>
 
 <script>
@@ -25,25 +27,40 @@
             placeholder: {
                 type: String,
                 default: ""
+            },
+            resize:{
+                type: String,
+                default: "stretch"  // cover contain
             }
         },
         data: function () {
             return {}
         },
         methods: {
-            "_click": function (event) {
+            _click(event) {
                 this.$emit('IimgClick', event);
             },
-            "_load": function () {
+            _load() {
                 this.$emit('IimgLoad');
             },
-
-            // 获取图片在三端上不同的路径
-            // e.g. 图片文件名是 test.jpg, 转换得到的图片地址为
-            // - H5      : http: //localhost:1337/src/images/test.jpg
-            // - Android : local:///test
-            // - iOS     : ../images/test.jpg
+            
+            /**
+             *---------------------------------------------------------
+             * @name: getImgPath
+             * @description: 获取图片在三端上不同的路径
+             * @param:  imgSrc,/type:String 
+             * @example:图片文件名是 test.jpg, 转换得到的图片地址为
+             * getImgPath('test.jpg')
+             * H5      : http: //localhost:1337/src/images/test.jpg
+             * Android : local:///test
+             * iOS     : ../images/test.jpg
+             *---------------------------------------------------------
+             */
             getImgPath(imgSrc) {
+                if(/http:/.test(imgSrc)){
+                    return imgSrc
+                }
+
                 let platform = weex.config.env.platform.toLowerCase();
                 let bundleUrl = weex.config.bundleUrl.replace(/\/#\//,'/');
                 let img_path = ''
@@ -62,7 +79,7 @@
                 }
 
                 return img_path
-            },
+            }
         }
     }
 </script>

@@ -33,8 +33,8 @@ function getEntryFileContent(entryPath, vueFilePath) {
   }
   return `
   /**
-   * @author walid
-   * @date 2016/03/20
+   * @author Aron zhang
+   * @date 2017/10/15
    * @description 程序入口启动配置
    */
   const App = require("${_entryPath}")

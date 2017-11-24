@@ -17,3 +17,5 @@
     npm run copy:ios
 ## 同时copy bunldejs 到ios + android 项目
     npm run copy
+
+
