@@ -32,8 +32,7 @@ const devWebConfig = merge(baseConfig,{
     entry:{
       "index":[
         // path.resolve(__dirname,'../src/render.js'),
-        // path.resolve(__dirname,'../web/plugin.js'),
-        path.resolve(__dirname,'../plugins/pluginInstall.js'),
+        // path.resolve(__dirname,'../plugins/pluginInstall.js'),
         path.resolve(__dirname,'../src/entry.js')
       ]
     },

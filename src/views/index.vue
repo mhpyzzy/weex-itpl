@@ -2,7 +2,6 @@
   <div class="container">
     <text @click="test">111111111111</text>
     <text @click="test2">222222222222</text>
-    <!-- <hello>111</hello> -->
   </div>
 </template>
 
