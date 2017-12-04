@@ -1,0 +1,10 @@
+{
+    "nat-communication": {
+        "source": {
+            "type": "registry",
+            "id": "nat-communication"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

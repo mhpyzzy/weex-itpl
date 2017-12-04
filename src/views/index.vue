@@ -1,7 +1,6 @@
 <template>  
   <div class="container">
     <text @click="test">111111111111</text>
-    <text @click="test2">222222222222</text>
   </div>
 </template>
 
@@ -14,8 +13,9 @@
 
 
 <script>
-  let animation = weex.requireModule('animation')
-  let weextest = weex.requireModule('weextest')
+  // let animation = weex.requireModule('animation')
+  // let weextest = weex.requireModule('weextest')
+  import Nat from 'natjs'
 
   export default {
     data(){
@@ -26,16 +26,12 @@
     components:{},
     methods:{
       test(){
-        
-        weextest.setTitle('zzyzzy')
+        Nat.call('415-736-0000')
         // guide.greeting()
       },
-      test2(){
-        weextest.log(11111111111111)
-      }
     },
     mounted(){
-      // console.log(weex)
+      console.log(Nat.call)
       // console.log(this.$getConfig())
     }
 
