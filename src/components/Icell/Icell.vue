@@ -43,11 +43,7 @@
     }
 </script>
 
-<style lang="sass" scoped>
-    $border_width_base:1px !default;
-    $border_style_base:solid !default;
-    $border_color_base:#ccc !default;
-
+<style scoped>
     .Icell{
         flex-direction: row;
         align-items: center;
@@ -57,9 +53,8 @@
     }
     .Icell_border{
         border-bottom:{
-            width:$border_width_base;
-            style:$border_style_base;
-            color:$border_color_base;
+            width:1px;
+            color:#ccc;
         }
     }
     .icon{

@@ -69,7 +69,8 @@ const walk = dir => {
             fs.outputFileSync(entryFile,getEntryFileContent(entryFile,fullpath))
             
             //配置webpack entry
-            let name = path.join(dir,path.basename(file,extname));
+            // let name = path.join(dir,path.basename(file,extname));
+            let name = path.basename(file,extname);
             entry[name] = `${entryFile}?entry=true`
             
         }else if(stat.isDirectory()){ // 如果是文件夹目录，则继续递归调用

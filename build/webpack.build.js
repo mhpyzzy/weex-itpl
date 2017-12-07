@@ -26,7 +26,6 @@ rm('-rf', path.resolve(__dirname, '../dist'))
 
 //native 入口文件
 const entry_Native = require('./build_entry')('views')
-
 // const express = require("express");
 
 const devWebConfig = merge(baseConfig,{

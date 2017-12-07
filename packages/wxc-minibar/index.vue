@@ -141,7 +141,7 @@
               img_path = `local:///${imgSrc.substr(0, imgSrc.lastIndexOf('.'))}`
           } else {
 
-              img_path = `./img/${imgSrc}`
+              img_path = `./${imgSrc}`
           }
 
           return img_path
